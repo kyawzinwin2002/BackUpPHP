@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 400px;
+    } */
+</style>
+<body>
+    <h4>Register Form</h4>
+
+    <form action="server.php?name=kyaw" method="post" enctype="multipart/form-data">
+        <label for="">Full Name : </label>
+        <input type="text" name="your_name" placeholder="Enter your name">
+<br>
+<br>
+<br>
+        <label for="">Email : </label>
+        <input type="email" name="your_email" placeholder="Enter your email">
+<br>
+<br>
+<br>
+        <label for="">Gender : </label>
+        <label for="male">Male</label>
+        <input value="male" type="radio" name="your_gender" >
+         <label for="female">Female</label>
+        <input value="female" type="radio" name="your_gender" >
+<br>
+<br>
+<br>
+        <label for="">Skills:</label>
+        <label for="html">html</label>
+        <input value="html" type="checkbox" name="your_skills[]">
+
+        <label for="css">css</label>
+        <input value="css" type="checkbox" name="your_skills[]">
+
+        <label for="js">js</label>
+        <input value="js" type="checkbox" name="your_skills[]">
+
+        <label for="php">php</label>
+        <input value="php" type="checkbox" name="your_skills[]">
+<br>
+<br>
+<br>
+
+        <label for="">Nationality</label>
+        <select name="nationality" id="">
+            <option value="mm">Myanmar</option>
+            <option value="kr">Korea</option>
+            <option value="jp">Japan</option>
+        </select>
+<br>
+<br>
+<br>
+
+        <label for="">Photo</label>
+        <input name="photo" type="file" accept="image/jpeg,image/png">
+
+<br>
+<br>
+<br>
+
+        <label for="">Attachment</label>
+        <input type="file" multiple name="attachment[]">
+<br>
+<br>
+<br>
+<button>Submit</button>
+    </form>
+
+    <!-- <form action="server.php" method="post">
+        <input type="text" name="Name" placeholder="Enter Your Name">
+        <input type="email" name="Email" placeholder="Enter Your Email">
+        <button>Submit</button>
+    </form> -->
+    <!-- <form action="server.php" method="post">
+        <input placeholder="Your Name" type="text" name="Your_Name">
+        <input placeholder="Your Email" type="email" name="Your_Email">
+        <button>Submit</button>
+    </form> -->
+
+    <!-- <form action="server.php" method="get">
+        <label for="">Your Name : </label>
+        <input name="Name" type="text" placeholder="Enter You Name">
+        <label for="" >Your Email : </label>
+        <input name="Email" type="email" placeholder="Enter You Email">
+        <div class="">
+            <button>Submit</button>
+        </div>
+    </form> -->
+
+ <!-- 
+    <form action="https://google.com/search" method="get">
+        <input type="text" name="q" placeholder="Search">
+        <button>Search</button>
+    </form> -->
+</body>
+</html>
